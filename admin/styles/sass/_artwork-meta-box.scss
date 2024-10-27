@@ -1,0 +1,28 @@
+.artwork-box {
+
+	.aside {
+		.graphic {
+			img {
+				max-width: 100%;
+				height: auto;
+				border: 1px solid #eee;
+				display: block;
+			}
+		}
+
+		.details {
+			color: #828282;
+			font-size:12px;
+			margin-top: 10px;
+
+			ul {
+				margin: 0;
+			}	
+
+			li {
+				margin:0;
+				padding: 3px 0;
+			}
+		}
+	}
+}

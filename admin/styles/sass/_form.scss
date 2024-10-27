@@ -1,0 +1,143 @@
+
+
+// WP Form Box
+
+.admg-dashboard {
+	.hndle {
+		font-size: 14px;
+	    padding: 8px 12px;
+	    margin: 0;
+	    line-height: 1.4;
+	    cursor: default !important;
+	}
+
+	label {
+		display: block;
+		margin-bottom: 3px;
+	}
+	select {
+		min-width: 160px;
+		max-width: 100%;	
+
+		&.select-inline {
+			min-width: auto;
+			width: auto;
+		}
+	}
+	.advert-field {
+		display: block;
+	}
+
+
+	.rule-box {
+		.main{
+			position: relative;
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: #000;
+				opacity: 0.2;
+				cursor: wait;
+				display: none;
+			}
+			&.loading:after {
+				display: block;
+			}
+		}
+	}
+
+	.advert-rules {
+
+		.rule-group {
+		    margin-bottom: 10px;
+		    position: relative;
+			&:not(:first-child) {
+				border-top: 1px solid #dedede;
+
+				&:after {
+					content: 'or';
+					font-weight: bold;
+					position: absolute;
+					top:-0.5em;
+					left: 30px;
+					font-size: 13px;
+				    line-height: 1;
+				    background: #fff;
+				    padding: 0 5px;
+				    color: #000;
+				}
+			}
+		}
+		.rule {
+			> td {
+				padding:10px 0 0 10px;
+				vertical-align: middle;
+
+				&.func {
+					width: 28% !important
+				}
+				&.result {
+					width: 42% !important;
+				}
+				&.operator {
+					width: 20% !important;
+				}
+				&.add {
+					width: 40px !important;
+				}
+				&.remove {
+					width: 28px !important;
+				}
+	
+				&:last-child {
+					padding-right: 10px;
+				}
+			}
+
+			select,
+			input[type='text'] {
+				width: 100%;
+			}
+
+			.rule-remove {
+				background: #fff;
+			    height: 28px;
+			    border-radius: 50%;
+			    box-shadow: none;
+			    line-height: 23px;
+			    visibility: hidden;
+			    &:hover {
+			    	background: #F55E4F;
+			    	border-color: #F55E4F;
+			    	color: #fff;
+			    }
+			}
+			&:hover .rule-remove {
+				visibility: visible;
+			}
+		}
+	}	
+
+	.group-add {
+		margin:10px;
+	}
+
+	.form-table {
+		tr {
+			td {
+				small {
+					font-style: italic;	
+				}
+			}
+			td:first-child {
+				width: 40%;
+			}
+		}
+	}
+}
+
+

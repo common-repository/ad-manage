@@ -1,0 +1,47 @@
+.admg-dashboard {
+
+	.am-tabs {
+
+		.tab-controls {
+			display: block;
+
+			a {
+				display: inline-block;
+				padding:0.75em 1em;
+				text-transform: uppercase;
+				border:1px solid #e7e7e7;
+				background-color: #eee;
+				margin-right: 2px;
+				text-decoration: none;
+				color: #444;
+				font-size:11px;
+				transition:all 0.5s ease;
+				outline: none !important;
+				box-shadow: none;
+				opacity: 0.6;
+
+				&.active,
+				&:hover {
+					background-color: #e7e7e7;
+				}
+
+				&.active {
+					opacity: 1;
+				}
+			}
+
+		}
+
+		.tab-panels {
+			.tab-panel {
+				display: none;
+				border-top:1px solid #e7e7e7;
+
+				&.active {
+					display: block;
+				}
+			}
+		}
+	}
+
+}

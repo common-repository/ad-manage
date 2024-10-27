@@ -1,0 +1,208 @@
+.admg-dashboard:after {
+  content: "";
+  display: table;
+  clear: both; }
+.admg-dashboard.advert-form .metabox-holder {
+  display: table;
+  width: 100%; }
+  .admg-dashboard.advert-form .metabox-holder > div {
+    display: table-cell;
+    vertical-align: top; }
+  .admg-dashboard.advert-form .metabox-holder > div:nth-child(1) {
+    width: 70%;
+    padding-right: 15px; }
+  .admg-dashboard.advert-form .metabox-holder > div:nth-child(2) {
+    width: 30%;
+    padding-left: 15px; }
+@media screen and (max-width: 980px) {
+  .admg-dashboard.advert-form .metabox-holder {
+    display: block; }
+    .admg-dashboard.advert-form .metabox-holder > div {
+      display: block !important;
+      width: 100% !important;
+      padding: 0 !important; } }
+.admg-dashboard .postbox .inside .panel-description {
+  padding: 5px 10px; }
+.admg-dashboard .postbox .inside.divided {
+  display: table;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+  .admg-dashboard .postbox .inside.divided > div {
+    display: table-cell;
+    vertical-align: top;
+    padding: 12px; }
+    .admg-dashboard .postbox .inside.divided > div:first-child {
+      border-right: 1px solid #E1E1E1; }
+  .admg-dashboard .postbox .inside.divided .aside {
+    width: 30%;
+    background-color: #F9F9F9;
+    padding: 12px 22px; }
+    .admg-dashboard .postbox .inside.divided .aside .description {
+      color: #777777;
+      font-size: 12px;
+      line-height: 1.4em;
+      font-style: normal;
+      margin: 3px 0 0 !important;
+      padding: 0 !important; }
+  .admg-dashboard .postbox .inside.divided .main {
+    width: 70%;
+    background-color: #fff; }
+@media screen and (max-width: 768px) {
+  .admg-dashboard .postbox .inside.divided {
+    display: block;
+    width: 100% !important; }
+    .admg-dashboard .postbox .inside.divided > div {
+      display: block;
+      width: auto !important; }
+      .admg-dashboard .postbox .inside.divided > div:first-child {
+        border-right: none;
+        border-bottom: 1px solid #E1E1E1; } }
+.admg-dashboard .postbox.rule-box .inside.divided .aside {
+  width: 20%; }
+.admg-dashboard .postbox.rule-box .inside.divided .main {
+  width: 80%; }
+
+.admg-dashboard .hndle {
+  font-size: 14px;
+  padding: 8px 12px;
+  margin: 0;
+  line-height: 1.4;
+  cursor: default !important; }
+.admg-dashboard label {
+  display: block;
+  margin-bottom: 3px; }
+.admg-dashboard select {
+  min-width: 160px;
+  max-width: 100%; }
+  .admg-dashboard select.select-inline {
+    min-width: auto;
+    width: auto; }
+.admg-dashboard .advert-field {
+  display: block; }
+.admg-dashboard .rule-box .main {
+  position: relative; }
+  .admg-dashboard .rule-box .main:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.2;
+    cursor: wait;
+    display: none; }
+  .admg-dashboard .rule-box .main.loading:after {
+    display: block; }
+.admg-dashboard .advert-rules .rule-group {
+  margin-bottom: 10px;
+  position: relative; }
+  .admg-dashboard .advert-rules .rule-group:not(:first-child) {
+    border-top: 1px solid #dedede; }
+    .admg-dashboard .advert-rules .rule-group:not(:first-child):after {
+      content: 'or';
+      font-weight: bold;
+      position: absolute;
+      top: -0.5em;
+      left: 30px;
+      font-size: 13px;
+      line-height: 1;
+      background: #fff;
+      padding: 0 5px;
+      color: #000; }
+.admg-dashboard .advert-rules .rule > td {
+  padding: 10px 0 0 10px;
+  vertical-align: middle; }
+  .admg-dashboard .advert-rules .rule > td.func {
+    width: 28% !important; }
+  .admg-dashboard .advert-rules .rule > td.result {
+    width: 42% !important; }
+  .admg-dashboard .advert-rules .rule > td.operator {
+    width: 20% !important; }
+  .admg-dashboard .advert-rules .rule > td.add {
+    width: 40px !important; }
+  .admg-dashboard .advert-rules .rule > td.remove {
+    width: 28px !important; }
+  .admg-dashboard .advert-rules .rule > td:last-child {
+    padding-right: 10px; }
+.admg-dashboard .advert-rules .rule select,
+.admg-dashboard .advert-rules .rule input[type='text'] {
+  width: 100%; }
+.admg-dashboard .advert-rules .rule .rule-remove {
+  background: #fff;
+  height: 28px;
+  border-radius: 50%;
+  box-shadow: none;
+  line-height: 23px;
+  visibility: hidden; }
+  .admg-dashboard .advert-rules .rule .rule-remove:hover {
+    background: #F55E4F;
+    border-color: #F55E4F;
+    color: #fff; }
+.admg-dashboard .advert-rules .rule:hover .rule-remove {
+  visibility: visible; }
+.admg-dashboard .group-add {
+  margin: 10px; }
+.admg-dashboard .form-table tr td small {
+  font-style: italic; }
+.admg-dashboard .form-table tr td:first-child {
+  width: 40%; }
+
+.admg-dashboard .text-danger {
+  color: #a00; }
+.admg-dashboard a.text-danger:hover {
+  color: red; }
+.admg-dashboard .postbox h4 {
+  margin: 0.33em 0; }
+
+.admg-dashboard .am-tabs .tab-controls {
+  display: block; }
+  .admg-dashboard .am-tabs .tab-controls a {
+    display: inline-block;
+    padding: 0.75em 1em;
+    text-transform: uppercase;
+    border: 1px solid #e7e7e7;
+    background-color: #eee;
+    margin-right: 2px;
+    text-decoration: none;
+    color: #444;
+    font-size: 11px;
+    transition: all 0.5s ease;
+    outline: none !important;
+    box-shadow: none;
+    opacity: 0.6; }
+    .admg-dashboard .am-tabs .tab-controls a.active, .admg-dashboard .am-tabs .tab-controls a:hover {
+      background-color: #e7e7e7; }
+    .admg-dashboard .am-tabs .tab-controls a.active {
+      opacity: 1; }
+.admg-dashboard .am-tabs .tab-panels .tab-panel {
+  display: none;
+  border-top: 1px solid #e7e7e7; }
+  .admg-dashboard .am-tabs .tab-panels .tab-panel.active {
+    display: block; }
+
+.artwork-box .aside .graphic img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #eee;
+  display: block; }
+.artwork-box .aside .details {
+  color: #828282;
+  font-size: 12px;
+  margin-top: 10px; }
+  .artwork-box .aside .details ul {
+    margin: 0; }
+  .artwork-box .aside .details li {
+    margin: 0;
+    padding: 3px 0; }
+
+.admg-dashboard .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
